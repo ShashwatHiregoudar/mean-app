@@ -24,6 +24,7 @@ mongoose.connection.on('connected', (err)=>{
     }
     console.log('Connected to Database with port no 27017');
     //console.log(mongoose.connection.collections());
+    //console.log(mongoose.connection)
 })
 app.use('/api', route);
 

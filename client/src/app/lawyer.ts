@@ -3,5 +3,6 @@ export class Lawyer {
     name: String;
     type: String;
     phone: String;
-    // slot:
+    slotdate: String;
+    slottime: String;
 }

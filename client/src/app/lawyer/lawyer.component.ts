@@ -14,6 +14,8 @@ export class LawyerComponent implements OnInit {
   name: String;
   type: String;
   phone: String;
+  slotdate: String;
+  slottime: String;
   constructor(private lawyerService: LawyerService) { }
 
   ngOnInit() {

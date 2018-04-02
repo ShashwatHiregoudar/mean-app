@@ -13,16 +13,15 @@ var Lawyerschema = mongoose.Schema({
         type:String,
         required: true
     },
-    slot:{
-        date:{
+    slotdate:{
             type:String,
             required: true
-        },
-        time:{
+    },
+    slottime:{
             type:String,
             required: true
-        }
     }
+    
 })
 
 
