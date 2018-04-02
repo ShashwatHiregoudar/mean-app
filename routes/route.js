@@ -14,7 +14,7 @@ router.get('/lawyers', (req, res, next)=>{
 //add data
 router.post('/lawyer', (req,res,next)=>{
     let newLawyer = new Lawyer({
-        name : req.body.name,
+        name : req.body.name, 
         type : req.body.type,
         phone : req.body.phone,
         slot:{
@@ -27,8 +27,6 @@ router.post('/lawyer', (req,res,next)=>{
     console.log('phone = '+req.body.phone);
     console.log('date = '+req.body.slot.date);
     console.log('time = '+req.body.slot.time);
-
-
     newLawyer.save((err, Lawyer)=>{
         if(err){
             console.log(err);
