@@ -9,13 +9,13 @@ export class LawyerService {
   constructor(private http: Http) { }
 
   getLawyers() {
-    return this.http.get('http://localhost:3000/api/lawyers')
+    return this.http.get('http://localhost:3000/api/lawyers_get')
           .map(res => res.json());
   }
   addLawyer(newLawyer) {
     const headers = new Headers();
     headers.append('Content-type', 'appliction/json');
-    return this.http.post('http://localhost:3000/api/lawyer', newLawyer, {headers: headers})
+    return this.http.post('http://localhost:3000/api/lawyer_add', newLawyer, {headers: headers})
           .map(res => res.json());
   }/*
   deleteLawyer(id){

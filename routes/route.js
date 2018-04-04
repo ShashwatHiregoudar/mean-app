@@ -36,7 +36,7 @@ router.post('/lawyer_add', (req,res,next)=>{
 });
 
 //delete lawyer
-router.delete('/lawyer_delete/:id', (req,res,next)=>{
+router.delete('/lawyer_del/:id', (req,res,next)=>{
     Lawyer.remove({_id:req.params.id}, function(err, result){
         if(err){
             res.json(err);
