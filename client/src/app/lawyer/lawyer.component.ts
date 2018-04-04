@@ -18,7 +18,7 @@ export class LawyerComponent implements OnInit {
   slottime: String;
   constructor(private lawyerService: LawyerService) { }
 
-  ngOnInit() { 
+  ngOnInit() {
     this.lawyerService.getLawyers()
         .subscribe(lawyers => this.lawyers = lawyers);
   }

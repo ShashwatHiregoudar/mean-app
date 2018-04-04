@@ -1,5 +1,5 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'start', '/client' ]
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'start' ]
 2 info using npm@3.10.10
 3 info using node@v6.14.1
 4 verbose stack Error: missing script: start
@@ -15,7 +15,7 @@
 4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:444:12)
 5 verbose cwd /home/shashwat/Desktop/mean-app
 6 error Linux 4.4.0-92-generic
-7 error argv "/usr/bin/node" "/usr/bin/npm" "start" "/client"
+7 error argv "/usr/bin/node" "/usr/bin/npm" "start"
 8 error node v6.14.1
 9 error npm  v3.10.10
 10 error missing script: start
