@@ -30,7 +30,7 @@ router.post('/lawyer_add', (req,res,next)=>{
             res.json({msg: 'Failed to add lawyer'});
         }
         else{
-            res.json({msg: 'Succesfully saved lawyer'});
+            res.json({msg: 'Succesfully saved  the lawyer'});
         }
     });
 });
