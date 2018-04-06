@@ -30,6 +30,7 @@ export class LawyerComponent implements OnInit {
         .subscribe(lawyer => {
           this.lawyers.push(lawyer);
         });
+    this.getlawyer();
   }
   deletelawyer(id) {
     this.lawyerService.deleteLawyer(id)

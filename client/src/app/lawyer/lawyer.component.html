@@ -4,6 +4,23 @@
 </p>
 </div>
 <div class="container">
+  <h3>Add New Lawyer</h3>
+  <div class="card yellow lighten-2">
+    <form (submit) = "addlawyer()">
+      <i class="material-icons prefix">account_circle</i>
+      <label>name</label>
+      <input type="text" [(ngModel)] = "name" name="name" class="validate">
+      <label>phone</label>
+      <input type="text" [(ngModel)] = "phone" name="phone" class="validate">
+      <label>type</label>
+      <input type="text" [(ngModel)] = "type" name="type" class="validate">
+      <label>slotdate</label>
+      <input type="text" [(ngModel)] = "slotdate" name="slotdate" class="validate">
+      <label>slottime</label>
+      <input type="text" [(ngModel)] = "slottime" name="slottime" class="validate">
+      <input type="submit" class="btn" value="submit">
+    </form>
+  </div>
 <table>
   <tr>
     <th>name</th>
@@ -18,7 +35,9 @@
     <td>{{lawyer.type}}</td>
     <td>{{lawyer.slotdate}}</td>
     <td>{{lawyer.slottime}}</td>
-    <input type="button" value="Delete?" class="btn animated jello" (click) = "deletelawyer(lawyer._id)">
+    <input type="button" value="Book" class="btn animated jello" (click) = "deletelawyer(lawyer._id)">
   </tr>
 </table>
+
 </div>
+
