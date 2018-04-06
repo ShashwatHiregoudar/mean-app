@@ -1,8 +1,19 @@
 <p>
   lawyer works!
 </p>
-<div class="container">
-  <div *ngFor = "let lawyer of lawyers">
-    {{lawyer.name}}<br>{{lawyer.phone}}<br>{{lawyer.type}}<br>{{lawyer.slotdate}}<br>{{lawyer.slottime}}<br><br><br><br><br><br>
-  </div>
-</div>
+<table>
+  <tr>
+    <th>name</th>
+    <th>phone</th>
+    <th>type</th>
+    <th>slotdate</th>
+    <th>slottime</th>
+  </tr>
+  <tr *ngFor = "let lawyer of lawyers">
+    <td>{{lawyer.name}}</td>
+    <td>{{lawyer.phone}}</td>
+    <td>{{lawyer.type}}</td>
+    <td>{{lawyer.slotdate}}</td>
+    <td>{{lawyer.slottime}}</td>
+  </tr>
+</table>
