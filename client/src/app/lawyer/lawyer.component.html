@@ -1,6 +1,9 @@
-<p>
-  lawyer works!
+<div class="animated swing">
+<p class="animated slideInLeft">
+  List of All the Available Lawyers
 </p>
+</div>
+<div class="container">
 <table>
   <tr>
     <th>name</th>
@@ -15,5 +18,7 @@
     <td>{{lawyer.type}}</td>
     <td>{{lawyer.slotdate}}</td>
     <td>{{lawyer.slottime}}</td>
+    <input type="button" value="Delete?" class="btn animated jello" (click) = "deletelawyer(lawyer._id)">
   </tr>
 </table>
+</div>
