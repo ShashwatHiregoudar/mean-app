@@ -17,10 +17,10 @@ export class LawyerService {
     headers.append('Content-type', 'appliction/json');
     return this.http.post('http://localhost:3000/api/lawyer_add', newLawyer, {headers: headers})
           .map(res => res.json());
-  }/*
+  }
   deleteLawyer(id){
-    return this.http.delete('http://localhost:3000/api/lawyer/'+ id)
-          .map(res => res.arrayBuffer.json());
-  }*/
+    return this.http.delete('http://localhost:3000/api/lawyer_del/'+ id)
+          .map(res => res.json());
+  }
 
 }
